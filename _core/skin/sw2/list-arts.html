@@ -5,11 +5,11 @@
         <TMPL_IF name>名称包含：「<TMPL_VAR name>」</TMPL_IF>
         <TMPL_IF tag>标签：「<TMPL_VAR tag>」</TMPL_IF>
         <TMPL_IF sub>小分类：「<TMPL_VAR sub>」</TMPL_IF>
-        <TMPL_IF playerName>玩家名：<TMPL_VAR playerName></TMPL_IF>
+        <TMPL_IF playerName>玩家：<TMPL_VAR playerName></TMPL_IF>
         </small>
       </h1>
       <form method="get" action="./" name="search" id="form-search">
-        <h3 onclick="formSwitch()">搜索▼</h3>
+        <h3 onclick="formSwitch()">搜索条件▼</h3>
         <input type="hidden" name="type" value="a">
         <p id="form-search-area" style="display:none">
           名称　：<input type="text" name="name" value="<TMPL_VAR name>"><br>
