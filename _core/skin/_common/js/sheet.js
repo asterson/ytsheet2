@@ -128,10 +128,12 @@ function copyToClipboard(text) {
   if (isCopied) {
     return;
   } else{
-    throw 'クリップボードへのコピーに失敗しました';
+    throw '复制到剪贴板失败';
   }
 }
-
+// TODO:增加生成海豹角色录入指令的功能
+ async function downloadAsSealDiceStCommand() {
+ }
 async function downloadAsUdonarium() {
   const characterDataJson = await getJsonData();
   const characterId = characterDataJson.characterName || characterDataJson.monsterName || characterDataJson.aka || '無題';
