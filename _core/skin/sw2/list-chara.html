@@ -17,8 +17,8 @@
       <form method="get" action="./" name="search" id="form-search">
         <h3 onclick="formSwitch()">搜索条件▼</h3>
         <p id="form-search-area" style="display:none">
-          分组：<select name="group"><option value="all">全部<TMPL_LOOP Groups><option value="<TMPL_VAR ID>" <TMPL_VAR SELECTED>><TMPL_VAR NAME></TMPL_LOOP></select><br>
-          角色名　：<input type="text" name="name" value="<TMPL_VAR name>"><br>
+          分组　：<select name="group"><option value="all">全部<TMPL_LOOP Groups><option value="<TMPL_VAR ID>" <TMPL_VAR SELECTED>><TMPL_VAR NAME></TMPL_LOOP></select><br>
+          角色名：<input type="text" name="name" value="<TMPL_VAR name>"><br>
           玩家名：<input type="text" name="player" value="<TMPL_VAR player>"><br>
           标签　：<input type="text" name="tag" value="<TMPL_VAR tag>"><br>
           种族　：<select name="race"><option value="">全部<TMPL_LOOP RaceList><TMPL_IF LABEL><optgroup label="<TMPL_VAR LABEL>"><TMPL_ELSE><option value="<TMPL_VAR NAME>" <TMPL_VAR SELECTED>><TMPL_VAR NAME></TMPL_IF></TMPL_LOOP></select><br>

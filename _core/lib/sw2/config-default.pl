@@ -11,7 +11,7 @@ our $game = 'sw2';
 # （CGIアップデート時に上書きされるため）
   
 ## ●タイトル
-  our $title = 'ytsheetⅡ for SW2.5';
+  our $title = 'ゆとシートⅡ for SW2.5';
 
 ## ●管理パスワード
   our $masterkey = '';
