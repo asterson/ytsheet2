@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!C:\Strawberry\perl\bin\perl.exe
 ####################################
 ##     ゆとシートⅡ for SW2.5     ##
 ##          by ゆとらいず工房     ##

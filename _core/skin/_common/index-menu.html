@@ -1,18 +1,18 @@
       <ul>
         <TMPL_IF typeName><li class="head"><b><TMPL_VAR typeName></b></TMPL_IF>
-        <li><a href="./?mode=blanksheet<TMPL_IF type>&type=<TMPL_VAR type></TMPL_IF>">新規作成</a>
-        <li class="small <TMPL_IF modeConvert>current</TMPL_IF>"><a href="./?mode=convertform">コンバート</a>
+        <li><a href="./?mode=blanksheet<TMPL_IF type>&type=<TMPL_VAR type></TMPL_IF>">创建角色</a>
+        <li class="small <TMPL_IF modeConvert>current</TMPL_IF>"><a href="./?mode=convertform">导入</a>
         <TMPL_IF LOGIN_ID>
-        <li class="mylist <TMPL_IF modeMylist>current</TMPL_IF>"><a href="./?mode=mylist<TMPL_IF type>&type=<TMPL_VAR type></TMPL_IF>">マイリスト</a>
-        <li class="small <TMPL_IF modeOption>current</TMPL_IF>"><a href="./?mode=option">オプション</a>
-        <li class="small"><a href="./?mode=logout">ログアウト</a>
+        <li class="mylist <TMPL_IF modeMylist>current</TMPL_IF>"><a href="./?mode=mylist<TMPL_IF type>&type=<TMPL_VAR type></TMPL_IF>">我的清单</a>
+        <li class="small <TMPL_IF modeOption>current</TMPL_IF>"><a href="./?mode=option">选项</a>
+        <li class="small"><a href="./?mode=logout">退出登录</a>
         <TMPL_ELSE>
           <TMPL_IF OAUTH_MODE>
-          <li class="small"><a href="<TMPL_VAR OAUTH_LOGIN_URL>">ログイン</a>
+          <li class="small"><a href="<TMPL_VAR OAUTH_LOGIN_URL>">登录</a>
           <TMPL_ELSE>
-          <li class="small"><a href="./?mode=login">ログイン</a>
-          <li class="small"><a href="./?mode=register">登録</a>
+          <li class="small"><a href="./?mode=login">登录</a>
+          <li class="small"><a href="./?mode=register">注册</a>
           </TMPL_IF>
         </TMPL_IF>
-        <li class="very-small"><a onclick="nightModeChange()" class="nightmode-icon" title="ナイトモード"></a>
+        <li class="very-small"><a onclick="nightModeChange()" class="nightmode-icon" title="深色模式"></a>
       </ul>
